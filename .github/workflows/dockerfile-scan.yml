@@ -1,5 +1,13 @@
 name: Docker Image CI
-on: [pull_request]
+on:
+  pull_request:
+    types:
+      - opened
+      - edited
+      - synchronize
+  schedule:
+    # https://crontab.guru/every-hour
+    - cron: 36 4 * * Sat
 jobs:
   build:
     runs-on: ubuntu-latest
