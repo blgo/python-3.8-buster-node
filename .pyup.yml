@@ -13,7 +13,3 @@ schedule: every week
 # requires private repo permissions, even on public repos
 # default: empty
 label_prs: update
-
-requirements:
-  - "requirements/base.txt"
-  - "requirements/local.txt"
