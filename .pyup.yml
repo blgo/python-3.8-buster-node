@@ -7,6 +7,7 @@ update: insecure
 # default: True
 # allowed: True, False
 pin: True
+schedule: "every week"
 
 # add a label to pull requests, default is not set
 # requires private repo permissions, even on public repos
