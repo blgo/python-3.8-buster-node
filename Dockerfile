@@ -2,6 +2,7 @@ FROM python:3.8-buster
 
 ENV PYTHONUNBUFFERED 1
 ENV PYTHONDONTWRITEBYTECODE 1
+ENV DEBIAN_FRONTEND=noninteractive
 
 # Configure timezone
 ENV TZ=Europe/London
@@ -9,6 +10,7 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 RUN /usr/local/bin/python -m pip install --upgrade pip
 
 RUN apt-get update \
+  && apt-get -y upgrade \ 
   # dependencies for building Python packages
   && apt-get install -y build-essential \
   # psycopg2 dependencies
