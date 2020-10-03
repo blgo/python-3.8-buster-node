@@ -11,7 +11,7 @@ flower==0.9.4  # https://github.com/mher/flower
 PyJWT==1.7.1 # https://github.com/jpadilla/pyjwt
 cryptography==2.9.2 # https://github.com/pyca/cryptography
 requests==2.20.1 # https://github.com/psf/requests
-urllib3==1.24.3
+urllib3==1.25.10
 
 # Django
 # ------------------------------------------------------------------------------
