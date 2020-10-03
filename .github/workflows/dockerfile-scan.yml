@@ -17,7 +17,7 @@ jobs:
       run: docker build . --file Dockerfile --tag localbuild/testimage:latest
     - uses: anchore/scan-action@v2
       with:
-        image-reference: "localbuild/testimage:latest"
+        image: "localbuild/testimage:latest"
         dockerfile-path: "Dockerfile"
         fail-build: true
     - name: anchore inline scan JSON results
