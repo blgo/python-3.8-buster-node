@@ -9,6 +9,7 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 RUN /usr/local/bin/python -m pip install --upgrade pip
 
 RUN apt-get update \
+  && apt install unattended-upgrades \ 
   # dependencies for building Python packages
   && apt-get install -y build-essential \
   # psycopg2 dependencies
