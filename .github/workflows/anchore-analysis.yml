@@ -8,7 +8,16 @@
 
 name: Anchore Container Scan
 
-on: push
+on:
+  push:
+  pull_request:
+    types:
+      - opened
+      - edited
+      - synchronize
+  schedule:
+    # https://crontab.guru/every-hour
+    - cron: 36 4 * * Sat
 
 jobs:
   Anchore-Build-Scan:
