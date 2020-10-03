@@ -25,7 +25,7 @@ django-money==1.1 # https://github.com/django-money/django-mone
 django-cors-headers==3.3.0
 
 # Django REST Framework
-djangorestframework==3.11.0  # https://github.com/encode/django-rest-framework
+djangorestframework==3.12.1  # https://github.com/encode/django-rest-framework
 
 # Django-Graphene
 graphene-django==2.10.0 # https://github.com/graphql-python/graphene-django
