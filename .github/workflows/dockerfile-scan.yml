@@ -18,6 +18,7 @@ jobs:
     - uses: anchore/scan-action@v2
       with:
         image: "localbuild/testimage:latest"
-        fail-build: true
+        fail-build: true     
+        severity-cutoff: critical
     - name: anchore inline scan JSON results
       run: for j in `ls ./anchore-reports/*.json`; do echo "---- ${j} ----"; cat ${j}; echo; done
