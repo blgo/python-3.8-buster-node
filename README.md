@@ -1,6 +1,6 @@
 [![Updates](https://pyup.io/repos/github/blgo/python-3.8-buster-node/shield.svg)](https://pyup.io/repos/github/blgo/python-3.8-buster-node/)
 [![](https://images.microbadger.com/badges/version/blgo/python-3.8-buster-node.svg)](https://microbadger.com/images/blgo/python-3.8-buster-node "Get your own version badge on microbadger.com")
-[![](https://images.microbadger.com/badges/image/blgo/python-3.8-buster-node.svg)](https://microbadger.com/images/blgo/python-3.8-buster-node "Get your own image badge on microbadger.com")
+![MicroBadger Layers](https://img.shields.io/microbadger/layers/blgo/python-3.8-buster-node)
 
 # python-3.8-buster-node
 
