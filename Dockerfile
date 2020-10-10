@@ -21,9 +21,9 @@ RUN apt-get update \
   && apt-get install -y gettext \
   # Git with Vim and Nano editors
   && apt-get install -y git git-lfs vim nano \
-  && apt-get install -y nodejs npm
+  && apt-get install -y nodejs npm yarn
 
-RUN npm install -g yarn elasticdump
+RUN yarn global add elasticdump
 
 # RUN sh -c "$(wget -O- https://github.com/deluan/zsh-in-docker/releases/download/v1.1.1/zsh-in-docker.sh)" -- \
 #    -t robbyrussell \
