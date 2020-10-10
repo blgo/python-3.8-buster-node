@@ -23,7 +23,7 @@ RUN apt-get update \
   && apt-get install -y git git-lfs vim nano \
   && apt-get install -y nodejs npm yarn
 
-RUN yarn global add elasticdump
+RUN npm install -g elasticdump@6.33.4
 
 # RUN sh -c "$(wget -O- https://github.com/deluan/zsh-in-docker/releases/download/v1.1.1/zsh-in-docker.sh)" -- \
 #    -t robbyrussell \
