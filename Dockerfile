@@ -25,14 +25,14 @@ RUN apt-get update \
 
 RUN npm install -g elasticdump@6.33.4
 
-# RUN sh -c "$(wget -O- https://github.com/deluan/zsh-in-docker/releases/download/v1.1.1/zsh-in-docker.sh)" -- \
-#    -t robbyrussell \
-#    -p git -p node \
-#    -p pip \
-#    -p django \
-#    -p python \
-#    -p https://github.com/zsh-users/zsh-autosuggestions \
-#    -p https://github.com/zsh-users/zsh-completions
+RUN sh -c "$(wget -O- https://github.com/deluan/zsh-in-docker/releases/download/v1.1.1/zsh-in-docker.sh)" -- \
+    -t robbyrussell \
+    -p git -p node \
+    -p pip \
+    -p django \
+    -p python \
+    -p https://github.com/zsh-users/zsh-autosuggestions \
+    -p https://github.com/zsh-users/zsh-completions
 
 # Requirements are installed here to ensure they will be cached.
 COPY ./requirements /requirements
