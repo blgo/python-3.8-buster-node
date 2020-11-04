@@ -12,3 +12,7 @@ pin: True
 # requires private repo permissions, even on public repos
 # default: empty
 label_prs: update
+requirements:
+  - "{{cookiecutter.project_slug}}/requirements/base.txt"
+  - "{{cookiecutter.project_slug}}/requirements/local.txt"
+  
