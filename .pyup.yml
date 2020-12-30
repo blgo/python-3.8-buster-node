@@ -13,7 +13,7 @@ pin: True
 # default: empty
 label_prs: update
 requirements:
-  - "{{cookiecutter.project_slug}}/requirements/base.txt"
-  - "{{cookiecutter.project_slug}}/requirements/local.txt"
-  - "{{cookiecutter.project_slug}}/requirements/production.txt"
+  - "requirements/base.txt"
+  - "requirements/local.txt"
+  - "requirements/production.txt"
   
