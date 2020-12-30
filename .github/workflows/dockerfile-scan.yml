@@ -1,24 +1,24 @@
-name: Docker Image CI
-on:
-  pull_request:
-    types:
-      - opened
-      - edited
-      - synchronize
-  schedule:
-    # https://crontab.guru/every-hour
-    - cron: 36 4 * * Sat
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v2
-    - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag localbuild/testimage:latest
-    - uses: anchore/scan-action@v2
-      with:
-        image: "localbuild/testimage:latest"
-        fail-build: true
-        severity-cutoff: critical
-    - name: anchore inline scan JSON results
-      run: for j in `ls ./anchore-reports/*.json`; do echo "---- ${j} ----"; cat ${j}; echo; done
+# name: Docker Image CI
+# on:
+#   pull_request:
+#     types:
+#       - opened
+#       - edited
+#       - synchronize
+#   schedule:
+#     # https://crontab.guru/every-hour
+#     - cron: 36 4 * * Sat
+# jobs:
+#   build:
+#     runs-on: ubuntu-latest
+#     steps:
+#     - uses: actions/checkout@v2
+#     - name: Build the Docker image
+#       run: docker build . --file Dockerfile --tag localbuild/testimage:latest
+#     - uses: anchore/scan-action@v2
+#       with:
+#         image: "localbuild/testimage:latest"
+#         fail-build: true
+#         severity-cutoff: critical
+#     - name: anchore inline scan JSON results
+#       run: for j in `ls ./anchore-reports/*.json`; do echo "---- ${j} ----"; cat ${j}; echo; done
