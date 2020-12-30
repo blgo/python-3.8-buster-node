@@ -37,6 +37,8 @@ RUN sh -c "$(wget -O- https://github.com/deluan/zsh-in-docker/releases/download/
 # Requirements are installed here to ensure they will be cached.
 COPY ./requirements /requirements
 RUN pip install -r /requirements/local.txt
+# Install production dependencies
+RUN pip install -r /requirements/production.txt
 
 ENV ORACLE_HOME /usr/lib/oracle/18.5/client64
 ENV PATH $PATH:$ORACLE_HOME/bin
