@@ -15,8 +15,8 @@ RUN apt-get update \
   && apt-get install -y build-essential \
   # psycopg2 dependencies
   && apt-get install -y libpq-dev \
-  # UML database diagram dependencies
-  && apt-get install -y graphviz \
+  # Django UML models diagram and pygraphviz dependencies
+  && apt-get install -y graphviz libgraphviz-dev \
   # Translations dependencies
   && apt-get install -y gettext \
   # Git with Vim and Nano editors
