@@ -3,7 +3,7 @@
 Werkzeug==1.0.1 # https://github.com/pallets/werkzeug
 ipdb==0.13.2  # https://github.com/gotcha/ipdb
 ipykernel==5.4.2
-Sphinx==3.0.4  # https://github.com/sphinx-doc/sphinx
+Sphinx==3.4.2  # https://github.com/sphinx-doc/sphinx
 pydotplus==2.0.2 # create UML database diagram with manage.py
 
 # Testing
