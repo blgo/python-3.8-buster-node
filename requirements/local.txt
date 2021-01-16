@@ -38,7 +38,7 @@ pytest-django==3.9.0  # https://github.com/pytest-dev/pytest-django
 # https://pyup.io/docs/bot/what-is-pyup-bot/
 pyupio==1.1.1
 # https://pyup.io/docs/safety/what-is-safety/
-safety==1.9.0
+safety==1.10.3
 
 # Graphing diagrams
 pygraphviz==1.6
