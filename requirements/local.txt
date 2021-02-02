@@ -41,4 +41,4 @@ pyupio==1.1.1
 safety==1.9.0
 
 # Graphing diagrams
-pygraphviz==1.6
+pygraphviz==1.7
