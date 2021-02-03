@@ -6,11 +6,14 @@ updates:
     interval: daily
   open-pull-requests-limit: 10
   ignore:
-    - dependency-type: "all"
+  - dependency-name: "*"
+    dependency-type: "all"
 - package-ecosystem: pip
   directory: "/requirements"
   schedule:
     interval: daily
   open-pull-requests-limit: 10
   ignore:
-    - dependency-type: "all"
+  - dependency-name: "*"
+    dependency-type: "all"
+    
