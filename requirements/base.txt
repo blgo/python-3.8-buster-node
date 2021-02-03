@@ -6,7 +6,7 @@ whitenoise==5.0.1  # https://github.com/evansd/whitenoise
 redis==3.5.0  # https://github.com/andymccurdy/redis-py
 hiredis==1.0.1  # https://github.com/redis/hiredis-py
 celery==4.4.2  # pyup: < 5.0  # https://github.com/celery/celery
-django-celery-beat==2.0.0  # https://github.com/celery/django-celery-beat
+django-celery-beat==2.2.0  # https://github.com/celery/django-celery-beat
 flower==0.9.4  # https://github.com/mher/flower
 PyJWT==1.7.1 # https://github.com/jpadilla/pyjwt
 cryptography==3.3.1 # https://github.com/pyca/cryptography
