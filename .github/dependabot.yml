@@ -4,16 +4,10 @@ updates:
   directory: "/"
   schedule:
     interval: daily
-  open-pull-requests-limit: 10
-  ignore:
-  - dependency-name: "*"
-    dependency-type: "all"
+  open-pull-requests-limit: 0
+
 - package-ecosystem: pip
   directory: "/requirements"
   schedule:
     interval: daily
-  open-pull-requests-limit: 10
-  ignore:
-  - dependency-name: "*"
-    dependency-type: "all"
-    
+  open-pull-requests-limit: 0
