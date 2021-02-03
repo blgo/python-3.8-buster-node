@@ -5,8 +5,12 @@ updates:
   schedule:
     interval: daily
   open-pull-requests-limit: 10
+  ignore:
+    - dependency-type: "all"
 - package-ecosystem: pip
   directory: "/requirements"
   schedule:
     interval: daily
   open-pull-requests-limit: 10
+  ignore:
+    - dependency-type: "all"
