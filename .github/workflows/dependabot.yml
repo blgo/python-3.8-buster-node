@@ -1,0 +1,5 @@
+    directory: "/"
+    schedule:
+      interval: "daily"
+    labels:
+      - "update"
