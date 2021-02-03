@@ -23,7 +23,7 @@ django-allauth==0.44.0  # https://github.com/pennersr/django-allauth
 django-crispy-forms==1.9.0  # https://github.com/django-crispy-forms/django-crispy-forms
 django-redis==4.11.0  # https://github.com/jazzband/django-redis
 django-money==1.1 # https://github.com/django-money/django-mone
-django-cors-headers==3.3.0
+django-cors-headers==3.7.0
 
 # Django REST Framework
 djangorestframework==3.12.1  # https://github.com/encode/django-rest-framework
