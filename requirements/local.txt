@@ -16,7 +16,7 @@ mock==4.0.2 # https://github.com/testing-cabal/mock
 
 # Code quality
 # ------------------------------------------------------------------------------
-flake8==3.7.9  # https://github.com/PyCQA/flake8
+flake8==3.8.4  # https://github.com/PyCQA/flake8
 flake8-isort==3.0.0  # https://github.com/gforcada/flake8-isort
 coverage==5.1  # https://github.com/nedbat/coveragepy
 black==19.10b0  # https://github.com/ambv/black
