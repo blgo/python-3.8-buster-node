@@ -21,6 +21,8 @@ RUN apt-get update \
   # Git with Vim and Nano editors
   && apt-get install -y git git-lfs vim nano \
   && apt-get install -y nodejs npm \
+  # We will need wget to download additional dependencies
+  && apt-get install -y gettext wget \
   # cleaning up unused files
   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false \
   && rm -rf /var/lib/apt/lists/*
