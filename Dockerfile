@@ -10,18 +10,20 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 RUN /usr/local/bin/python -m pip install --upgrade pip
 
 RUN apt-get update \
-  && apt-get -y upgrade \ 
   # dependencies for building Python packages
   && apt-get install -y build-essential \
   # psycopg2 dependencies
   && apt-get install -y libpq-dev \
-  # Django UML models diagram and pygraphviz dependencies
-  && apt-get install -y graphviz libgraphviz-dev \
   # Translations dependencies
   && apt-get install -y gettext \
+  # Django UML models diagram and pygraphviz dependencies
+  && apt-get install -y graphviz libgraphviz-dev \
   # Git with Vim and Nano editors
   && apt-get install -y git git-lfs vim nano \
   && apt-get install -y nodejs npm
+  # cleaning up unused files
+  && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false \
+  && rm -rf /var/lib/apt/lists/*
 
 RUN npm install -g yarn elasticdump
 
