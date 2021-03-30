@@ -20,7 +20,7 @@ RUN apt-get update \
   && apt-get install -y graphviz libgraphviz-dev \
   # Git with Vim and Nano editors
   && apt-get install -y git git-lfs vim nano \
-  && apt-get install -y nodejs npm
+  && apt-get install -y nodejs npm \
   # cleaning up unused files
   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false \
   && rm -rf /var/lib/apt/lists/*
