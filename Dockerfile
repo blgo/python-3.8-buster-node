@@ -33,6 +33,8 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
 RUN apt-get update && apt-get install -y \
   libpq5 \
+  graphviz \
+  libgraphviz-dev \
   && rm -rf /var/lib/apt/lists/*
 
 COPY --from=build-python-stage /install /usr/local
