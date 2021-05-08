@@ -1,8 +1,8 @@
 -r ./base.txt
 
 Werkzeug==1.0.1 # https://github.com/pallets/werkzeug
+watchdog==1.0.2 # https://github.com/gorakhargosh/watchdog
 ipdb==0.13.2  # https://github.com/gotcha/ipdb
-ipykernel==5.4.2
 Sphinx==3.0.4  # https://github.com/sphinx-doc/sphinx
 pydotplus==2.0.2 # create UML database diagram with manage.py
 
@@ -27,7 +27,7 @@ pre-commit==2.3.0  # https://github.com/pre-commit/pre-commit
 # ------------------------------------------------------------------------------
 factory-boy==2.12.0  # https://github.com/FactoryBoy/factory_boy
 
-django-debug-toolbar==3.2.1  # https://github.com/jazzband/django-debug-toolbar
+django-debug-toolbar==3.2.1 # https://github.com/jazzband/django-debug-toolbar
 django-graphiql-debug-toolbar==0.1.4  # https://github.com/flavors/django-graphiql-debug-toolbar
 django-extensions==2.2.9  # https://github.com/django-extensions/django-extensions
 django-coverage-plugin==1.8.0  # https://github.com/nedbat/django_coverage_plugin
@@ -40,5 +40,7 @@ pyupio==1.1.1
 # https://pyup.io/docs/safety/what-is-safety/
 safety==1.9.0
 
-# Graphing diagrams
-pygraphviz==1.6
+# The IPython kernel for Jupyter Notebooks in VSCode
+# ------------------------------------------------------------------------------
+# https://ipython.org/
+ipykernel==5.4.2
