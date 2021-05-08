@@ -10,27 +10,32 @@ django-celery-beat==2.0.0  # https://github.com/celery/django-celery-beat
 flower==0.9.4  # https://github.com/mher/flower
 PyJWT==1.7.1 # https://github.com/jpadilla/pyjwt
 cryptography==3.4.6 # https://github.com/pyca/cryptography
-requests==2.20.1 # https://github.com/psf/requests
+requests==2.24.0 # https://github.com/psf/requests
 urllib3
 psycopg2==2.8.5 # https://github.com/psycopg/psycopg2
+transitions==0.8.8 # https://github.com/pytransitions/transitions
 
 # Django
 # ------------------------------------------------------------------------------
-django==3.1.8  # https://www.djangoproject.com/
+django==3.1.8 # https://www.djangoproject.com/
 django-environ==0.4.5  # https://github.com/joke2k/django-environ
 django-model-utils==4.0.0  # https://github.com/jazzband/django-model-utils
 django-allauth==0.44.0  # https://github.com/pennersr/django-allauth
 django-crispy-forms==1.9.0  # https://github.com/django-crispy-forms/django-crispy-forms
-django-redis==4.11.0  # https://github.com/jazzband/django-redis
+django-redis==4.12.1  # https://github.com/jazzband/django-redis
 django-money==1.1 # https://github.com/django-money/django-mone
 django-cors-headers==3.3.0
 
 # Django REST Framework
-djangorestframework==3.12.1  # https://github.com/encode/django-rest-framework
+djangorestframework==3.12.1 # https://github.com/encode/django-rest-framework
+django-filter==2.4.0
 
 # Django-Graphene
 graphene-django==2.10.0 # https://github.com/graphql-python/graphene-django
 django-graphql-jwt==0.3.1 # https://github.com/flavors/django-graphql-jwtv
+
+# Django Health check
+django-health-check # https://github.com/KristianOellegaard/django-health-check
 
 # CDF Exporter makes use of pgeocode and cx-Oracle
 # ------------------------------------------------------------------------------
@@ -40,3 +45,13 @@ pgeocode==0.2.1 # https://github.com/symerio/pgeocode
 # Elasticsearch 7.x
 cx-Oracle==7.3.0
 elasticsearch-dsl==7.2.1
+
+# OpenAPI documentation
+# ------------------------------------------------------------------------------
+# https://www.django-rest-framework.org/api-guide/schemas/
+uritemplate==3.0.1
+pyyaml==5.4.1
+
+# Broadband reports over SFTP
+# https://github.com/paramiko/paramiko
+paramiko==2.7.2
