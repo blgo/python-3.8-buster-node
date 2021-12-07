@@ -32,7 +32,7 @@ django-filter==2.4.0
 
 # Django-Graphene
 graphene-django==3.0.0b7 # https://github.com/graphql-python/graphene-django
-django-graphql-jwt==0.3.2 # https://github.com/flavors/django-graphql-jwt
+django-graphql-jwt==0.3.4 # https://github.com/flavors/django-graphql-jwt
 
 # Django Health check
 django-health-check==3.16.4 # https://github.com/KristianOellegaard/django-health-check
