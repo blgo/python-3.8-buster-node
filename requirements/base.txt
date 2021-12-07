@@ -44,7 +44,7 @@ pgeocode==0.3.0 # https://github.com/symerio/pgeocode
 
 # Elasticsearch 7.x
 cx-Oracle==8.1.0
-elasticsearch-dsl==7.3.0
+elasticsearch-dsl==7.4.0
 
 # OpenAPI documentation
 # ------------------------------------------------------------------------------
