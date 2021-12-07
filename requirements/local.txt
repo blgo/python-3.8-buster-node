@@ -43,7 +43,7 @@ safety==1.10.3
 # The IPython kernel for Jupyter Notebooks in VSCode
 # ------------------------------------------------------------------------------
 # https://ipython.org/
-ipykernel==5.5.4
+ipykernel==6.6.0
 
 # utils/ScrapePoPs.py
 beautifulsoup4==4.9.3
