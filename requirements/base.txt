@@ -50,7 +50,7 @@ elasticsearch-dsl==7.3.0
 # ------------------------------------------------------------------------------
 # https://www.django-rest-framework.org/api-guide/schemas/
 uritemplate==3.0.1
-pyyaml==5.4.1
+pyyaml==6.0
 
 # Broadband reports over SFTP
 # https://github.com/paramiko/paramiko
