@@ -47,4 +47,4 @@ ipykernel==5.5.4
 
 # utils/ScrapePoPs.py
 beautifulsoup4==4.9.3
-selenium
+selenium==4.1.0
