@@ -43,7 +43,7 @@ django-health-check==3.16.4 # https://github.com/KristianOellegaard/django-healt
 pgeocode==0.3.0 # https://github.com/symerio/pgeocode
 
 # Elasticsearch 7.x
-cx-Oracle==8.1.0
+cx-Oracle==8.3.0
 elasticsearch-dsl==7.3.0
 
 # OpenAPI documentation
