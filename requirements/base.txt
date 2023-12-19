@@ -54,7 +54,7 @@ pyyaml==5.4.1
 
 # Broadband reports over SFTP
 # https://github.com/paramiko/paramiko
-paramiko==2.7.2
+paramiko==3.4.0
 
 # Graphing diagrams
 pygraphviz==1.7
